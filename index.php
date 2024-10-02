@@ -13,6 +13,7 @@ if (count($request_uri) < 2) {
     exit();
 }
 
+
 // Extraemos el recurso y la acción
 $resource = $request_uri[1];  // Ej. 'Doctor', 'Paciente', 'Pastillas', 'Prescripciones', 'Tomas'
 $action = $request_uri[2] ?? null;  // Ej. 'insertarDoctor', 'obtenerDatosPastillaPorId', etc.
